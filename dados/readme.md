@@ -1,0 +1,2 @@
+# DADOS
+Dados de projetos que serviram de exemplo para montar a carga de dados do projeto piloto de banco de dados. As imagens do projeto IPP PMRJ, foram cedidas para uso acadêmico pelo IPP e estão sob posse do LFSR, seu uso em projeto fotogramétrico se deu anteriormente no TCC de Luiz Henrique de Carvalho Freires de título "Análise comparativa do potencial das medições estereoscópicas dos sensores Ultracam e Worldview". 

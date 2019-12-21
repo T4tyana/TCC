@@ -1,0 +1,1814 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl/epp.xsl"?>
+<efotoPhotogrammetricProject version="1.0.325" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="EPPSchema/epp_structure.xsd"
+	xmlns:gml="http://www.opengis.net/gml"
+	xmlns:mml="http://www.w3.org/1998/Math/MathML">
+	<projectHeader>
+		<name>UerjProject_InteriorAndExteriorOrientations</name>
+		<description>This project was built up as the thrid didatic photogrammetric project using a strip with only 3 aerial, digitized- frame images at 300Dots per inch (DPI).  
+		Ground Control Surveying, computation and Documentation was performed by The Department of Cartographic Engineeering of The Rio de Janeiro State University.(UERJ)
+		The imagery was kindly donated to this project by The Instituto Pereira Passos.</description>
+		<filePath>F:/e-foto/data/project_example_data</filePath>
+		<fileName>UERJ_io_eo.epp</fileName>
+		<creation>2014-01-24T22:58:30</creation>
+		<modification>2017-11-07T19:05:16</modification>
+		<owner>The Laboratory of Photogrammetry of UERJ</owner>
+		<aims>To practice the integrated version.</aims>
+		<context>The integrated version of e-foto.</context>
+	</projectHeader>
+	<terrain>
+		<meanAltitude uom="#m">10.86</meanAltitude>
+		<minAltitude uom="#m">4.595</minAltitude>
+		<maxAltitude uom="#m">21.146</maxAltitude>
+		<GRS>WGS84</GRS>
+		<CPS>UTM</CPS>
+		<workAreaCenterCoordinates>
+			<Lat direction="S">
+				<degrees>22</degrees>
+				<minutes>54</minutes>
+				<seconds>54.36</seconds>
+			</Lat>
+			<Long direction="W">
+				<degrees>43</degrees>
+				<minutes>14</minutes>
+				<seconds>3.67</seconds>
+			</Long>
+			<utmFuse>23</utmFuse>
+		</workAreaCenterCoordinates>
+	</terrain>
+	<sensors>
+		<sensor key="1">
+			<sensorId>RMK A</sensorId>
+			<type>
+				<geometry>frame</geometry>
+				<platform>aerial</platform>
+				<detector>film</detector>
+				<energySource>natural</energySource>
+				<calculationMode>With Fiducial Marks</calculationMode>
+				<spectralRanges uom="#um"><!--#um equivale a dez elevado a menos seis metros-->
+					<spectralRange band="1">
+						<inferiorLimit>0.4</inferiorLimit>
+						<superiorLimit>0.7</superiorLimit>
+					</spectralRange>
+				</spectralRanges>
+			</type>
+			<description>RMK A 15/23 - SÉRIE 137 474 - LENTES PLEOGON A2 - SÉRIE 137 504</description>
+			<calibrationCertificate>
+				<number>001/96</number>
+				<dispatch>2011-08-15T00:00:00</dispatch>
+				<expiration>2000-01-01T00:00:00</expiration>
+			</calibrationCertificate>
+			<focalDistance uom="#mm">
+				<value>153.528</value>
+				<sigma>Not Available</sigma>
+			</focalDistance>
+			<distortionCoefficients>
+				<radialSymmetric considered="false">
+					<k0>
+						<value>-2.66700000e-05</value>
+					</k0>
+					<k1>
+						<value>-1.81300000e-09</value>
+					</k1>
+					<k2>
+						<value>-5.87700000e-14</value>
+					</k2>
+					<k3>
+						<value>-5.90900000e-18</value>
+					</k3>
+					<sigma>Not Available</sigma>
+				</radialSymmetric>
+				<decentered considered="false">
+					<P1>
+						<value>-6.27800000e-07</value>
+					</P1>
+					<P2>
+						<value>7.17200000e-07</value>
+					</P2>
+					<sigma>Not Available</sigma>
+				</decentered>
+			</distortionCoefficients>
+			<principalPointCoordinates uom="#mm">
+				<gml:pos>-0.063 -0.037</gml:pos>
+				<sigma>Not Available</sigma>
+			</principalPointCoordinates>
+			<fiducialMarks uom="#mm">
+				<fiducialMark key="1">
+					<gml:pos>113 0.016</gml:pos>
+					<sigma>Not Available</sigma>
+				</fiducialMark>
+				<fiducialMark key="2">
+					<gml:pos>-113.006 0.018</gml:pos>
+					<sigma>Not Available</sigma>
+				</fiducialMark>
+				<fiducialMark key="3">
+					<gml:pos>0.004 113.015</gml:pos>
+					<sigma>Not Available</sigma>
+				</fiducialMark>
+				<fiducialMark key="4">
+					<gml:pos>0.007 -112.975</gml:pos>
+					<sigma>Not Available</sigma>
+				</fiducialMark>
+			</fiducialMarks>
+		</sensor>
+	</sensors>
+	<flights>
+		<flight key="1" sensor_key="1">
+			<flightId>84296</flightId>
+			<description>Images flown above the Campus of The Rio de Janeiro State University (UERJ) and its neighborhood, including the Maracana (old) stadium.</description>
+			<execution>1997-05-01</execution>
+			<producerName>Esteio Aerolevantamentos</producerName>
+			<nominalScale>
+				<mml:mfrac>
+					<mml:mn>1</mml:mn>
+					<mml:mn>8000</mml:mn>
+				</mml:mfrac>
+			</nominalScale>
+			<flightHeight uom="#m">1200</flightHeight>
+			<overlap>
+				<longitudinal uom="#%">60</longitudinal>
+				<transversal uom="#%">30</transversal>
+			</overlap>
+		</flight>
+	</flights>
+	<images>
+		<image key="1" sensor_key="1" flight_key="1">
+			<imageId>016</imageId>
+			<width uom="#px">2895</width>
+			<height uom="#px">2838</height>
+			<fileName>1997_016_300dpi.bmp</fileName>
+			<filePath>../efoto_images</filePath>
+			<resolution uom="#dpi">300</resolution>
+			<flightDirection>5.221213113992743e-308</flightDirection>
+		</image>
+		<image key="2" sensor_key="1" flight_key="1">
+			<imageId>017</imageId>
+			<width uom="#px">2895</width>
+			<height uom="#px">2838</height>
+			<fileName>1997_017_300dpi.bmp</fileName>
+			<filePath>../efoto_images</filePath>
+			<resolution uom="#dpi">300</resolution>
+			<flightDirection>5.221213114426857e-308</flightDirection>
+		</image>
+		<image key="3" sensor_key="1" flight_key="1">
+			<imageId>018</imageId>
+			<width uom="#px">2810</width>
+			<height uom="#px">2810</height>
+			<fileName>1997_018_300dpi.bmp</fileName>
+			<filePath>../efoto_images</filePath>
+			<resolution uom="#dpi">600</resolution>
+			<flightDirection>5.221213114398074e-308</flightDirection>
+		</image>
+	</images>
+	<points>
+		<point key="1" type="control">
+			<pointId>P01</pointId>
+			<description>Praça Varnhagem</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>681100.209 7464305.984 12.002</gml:pos>
+				<sigma>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.01</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>2</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>3</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="1"><gml:pos>2196 2445</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="2"><gml:pos>1206 2415</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="3"><gml:pos>167 2529</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="2" type="control">
+			<pointId>P02</pointId>
+			<description>Passarela sobre o Rio Joana.</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>681079.091 7464791.902 10.103</gml:pos>
+				<sigma>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>1</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>1</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>1</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="1"><gml:pos>2141 1758</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="2"><gml:pos>1156 1735</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="3"><gml:pos>113 1830</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="3" type="control">
+			<pointId>P03</pointId>
+			<description>Engo. Octacílio Negrão de Lima.</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>680114.618 7464269.661 14.941</gml:pos>
+				<sigma>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>3.65896</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>3.14159265</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="1"><gml:pos>805 2539</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="4" type="control">
+			<pointId>P04</pointId>
+			<description>Torres Homem.</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>680262.749 7465023.964 16.25</gml:pos>
+				<sigma>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>1</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>2</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>3</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="1"><gml:pos>1001 1460</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="5" type="control">
+			<pointId>P05</pointId>
+			<description>Mangueira</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>680377.816 7465806.099 20.306</gml:pos>
+				<sigma>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>1</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>1</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>1</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</sigma>
+			</spatialCoordinates><imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="1"><gml:pos>1142 381</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="2"><gml:pos>128 355</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="6" type="checking">
+			<pointId>P06</pointId>
+			<description>Bloco C.</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>680888.0110000001 7465251.245 68.268</gml:pos>
+				<sigma>Not Available</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+			</imagesMeasurements>
+		</point>
+		<point key="7" type="control">
+			<pointId>P08</pointId>
+			<description>Rio Maracanã</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>681875.866 7465066.854 5.98</gml:pos>
+				<sigma>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>1</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>1</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>1</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="px" image_key="2"><gml:pos>2238 1316</gml:pos></imageCoordinates>
+				<imageCoordinates uom="px" image_key="3"><gml:pos>1221 1376</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="8" type="control">
+			<pointId>P09</pointId>
+			<description>Vinte e Oito de Setembro.</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>680626.292 7464876.497 12.075</gml:pos>
+				<sigma>Error</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="1"><gml:pos>1512.000 1654.000</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="2"><gml:pos>517.000 1641.000</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="9" type="control">
+			<pointId>P10</pointId>
+			<description>Quinta da Boa Vista.</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>682031.497 7465841.798 21.146</gml:pos>
+				<sigma>Not Available</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="2"><gml:pos>2420.000 244.000</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="3"><gml:pos>1376.000 294.000</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="10" type="control">
+			<pointId>P11</pointId>
+			<description>Rio Trapicheiros.</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>682134.395 7464127.842 8.656000000000001</gml:pos>
+				<sigma>Not Available</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="2"><gml:pos>2643.000 2598.000</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="3"><gml:pos>1660.000 2686.000</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="11" type="control">
+			<pointId>P12</pointId>
+			<description>Radial Oeste - Maracanã.</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>681361.203 7465299.251 7.796</gml:pos>
+				<sigma>Not Available</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="1"><gml:pos>2499.000 1051.000</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="2"><gml:pos>1523.000 1020.000</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="3"><gml:pos>485.000 1094.000</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="12" type="control">
+			<pointId>P13</pointId>
+			<description>Radial Oeste - São Cristóvão.</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>682208.231 7465250.939 5.913</gml:pos>
+				<sigma>Not Available</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="2"><gml:pos>2678.000 1050.000</gml:pos></imageCoordinates>
+				<imageCoordinates uom="#px" image_key="3"><gml:pos>1666.000 1096.000</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+		<point key="13" type="photogrammetric">
+			<pointId>P14</pointId>
+			<description>Instituto de Educação.</description>
+			<spatialCoordinates uom="#m">
+				<gml:pos>682912.044 7464795.162 4.595</gml:pos>
+				<sigma>Not Available</sigma>
+			</spatialCoordinates>
+			<imagesMeasurements>
+				<imageCoordinates uom="#px" image_key="3"><gml:pos>2675.000 1670.000</gml:pos></imageCoordinates>
+			</imagesMeasurements>
+		</point>
+	</points>
+	<interiorOrientation>
+		<imageIO type="Affine" image_key="1">
+			<parameters>
+				<Xa>
+					<a0>-121.7329856092689</a0>
+					<a1>0.08483651647337956</a1>
+					<a2>-0.0002533540575063702</a2>
+					<b0>115.8516683186817</b0>
+					<b1>-0.0001915955371948097</b1>
+					<b2>-0.08473507779333339</b2>
+				</Xa>
+			</parameters>
+			<quality>
+				<V>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.00418666619971475</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.01968379161181093</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0041866567715374</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.01968374728483739</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.004185091694390491</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01967638900718782</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.004188231276843402</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01969114988948206</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</V>
+				<sigma0Squared>0.0008099578851160261</sigma0Squared>
+				<SigmaXa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.001098026866230257</mml:cn>
+							<mml:cn>-3.282247427218354e-007</mml:cn>
+							<mml:cn>-3.103369313837061e-007</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-3.282247427218354e-007</mml:cn>
+							<mml:cn>2.282550119234003e-010</mml:cn>
+							<mml:cn>-1.717466074703072e-013</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-3.103369313837062e-007</mml:cn>
+							<mml:cn>-1.717466074703072e-013</mml:cn>
+							<mml:cn>2.277426762616725e-010</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.001098026866230257</mml:cn>
+							<mml:cn>-3.282247427218354e-007</mml:cn>
+							<mml:cn>-3.103369313837061e-007</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-3.282247427218354e-007</mml:cn>
+							<mml:cn>2.282550119234003e-010</mml:cn>
+							<mml:cn>-1.717466074703072e-013</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-3.103369313837062e-007</mml:cn>
+							<mml:cn>-1.717466074703072e-013</mml:cn>
+							<mml:cn>2.277426762616725e-010</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaXa>
+				<SigmaLa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.0006074679720734252</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002024894570448325</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002024137614152764</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002025656086721571</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006074679720734252</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002024894570448325</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002024137614152764</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002025656086721571</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.0002024894570448325</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006074688840679351</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002024133055889979</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002025651525039257</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002024894570448325</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006074688840679351</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002024133055889979</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002025651525039257</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0002024137614152765</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.000202413305588998</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006076202466892633</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002024894285775113</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002024137614152765</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.000202413305588998</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006076202466892633</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002024894285775113</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.000202565608672157</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002025651525039256</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002024894285775115</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006073165525174546</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.000202565608672157</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002025651525039256</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002024894285775115</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006073165525174546</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaLa>
+			</quality>
+			<fiducialMarks uom="#px">
+				<fiducialMark key="1">
+					<gml:pos>2771 1361</gml:pos>
+				</fiducialMark>
+				<fiducialMark key="2">
+					<gml:pos>107 1367</gml:pos>
+				</fiducialMark>
+				<fiducialMark key="3">
+					<gml:pos>1435 30</gml:pos>
+				</fiducialMark>
+				<fiducialMark key="4">
+					<gml:pos>1443 2697</gml:pos>
+				</fiducialMark>
+			</fiducialMarks>
+		</imageIO>
+		<imageIO type="Affine" image_key="2">
+			<parameters>
+				<Xa>
+					<a0>-122.2882726002081</a0>
+					<a1>0.0848051841715767</a1>
+					<a2>-3.069732379098406e-005</a2>
+					<b0>116.1942494086046</b0>
+					<b1>-0.0001916679316794453</b1>
+					<b2>-0.08479917206303789</b2>
+				</Xa>
+			</parameters>
+			<quality>
+				<V>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.004242326266378882</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.01969979578950819</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.004242325071714959</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.01969979024200373</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.004240733803362216</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01969240097959357</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.004243917534758042</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01970718505192792</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</V>
+				<sigma0Squared>0.0008121584010683071</sigma0Squared>
+				<SigmaXa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.001107846808540228</mml:cn>
+							<mml:cn>-3.304950302687057e-007</mml:cn>
+							<mml:cn>-3.132014831611802e-007</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-3.304950302687057e-007</mml:cn>
+							<mml:cn>2.287061154854995e-010</mml:cn>
+							<mml:cn>4.290899439346581e-013</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-3.132014831611802e-007</mml:cn>
+							<mml:cn>4.290899439346581e-013</mml:cn>
+							<mml:cn>2.287049723190447e-010</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.001107846808540228</mml:cn>
+							<mml:cn>-3.304950302687057e-007</mml:cn>
+							<mml:cn>-3.132014831611802e-007</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-3.304950302687057e-007</mml:cn>
+							<mml:cn>2.287061154854995e-010</mml:cn>
+							<mml:cn>4.290899439346581e-013</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-3.132014831611802e-007</mml:cn>
+							<mml:cn>4.290899439346581e-013</mml:cn>
+							<mml:cn>2.287049723190447e-010</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaXa>
+				<SigmaLa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.0006091187579190038</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002030395859730119</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002029634271528905</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.000203115801969425</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006091187579190038</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002030395859730119</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002029634271528905</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.000203115801969425</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.0002030395859730119</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006091188722715705</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002029633699980617</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002031157447716872</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002030395859730119</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006091188722715705</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002029633699980617</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002031157447716872</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0002029634271528905</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002029633699980617</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006092711613022538</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002030395573848983</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002029634271528905</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002029633699980617</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006092711613022538</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002030395573848983</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0002031158019694249</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002031157447716871</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002030395573848984</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006089664117120935</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002031158019694249</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0002031157447716871</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0002030395573848984</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0006089664117120935</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaLa>
+			</quality>
+			<fiducialMarks uom="#px">
+				<fiducialMark key="1">
+					<gml:pos>2775 1364</gml:pos>
+				</fiducialMark>
+				<fiducialMark key="2">
+					<gml:pos>110 1370</gml:pos>
+				</fiducialMark>
+				<fiducialMark key="3">
+					<gml:pos>1442 34</gml:pos>
+				</fiducialMark>
+				<fiducialMark key="4">
+					<gml:pos>1443 2699</gml:pos>
+				</fiducialMark>
+			</fiducialMarks>
+		</imageIO>
+		<imageIO type="Affine" image_key="3">
+			<parameters>
+				<Xa>
+					<a0>-118.9652123861085</a0>
+					<a1>0.08401448822443117</a1>
+					<a2>-0.0004671933957721276</a2>
+					<b0>117.3727500276382</b0>
+					<b1>-0.000469018888138602</b1>
+					<b2>-0.08397731873742412</b2>
+				</Xa>
+			</parameters>
+			<quality>
+				<V>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.0252442343843029</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.001382231262260461</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.02526300972790807</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.001383259293746848</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.02525356972794138</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.001382742412744165</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.02525367438427516</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.00138274814312922</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</V>
+				<sigma0Squared>0.001279314911308214</sigma0Squared>
+				<SigmaXa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.001718713849563955</mml:cn>
+							<mml:cn>-5.034104458017701e-007</mml:cn>
+							<mml:cn>-4.909352281587846e-007</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-5.034104458017701e-007</mml:cn>
+							<mml:cn>3.535813615110892e-010</mml:cn>
+							<mml:cn>-7.323854935102777e-016</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-4.909352281587845e-007</mml:cn>
+							<mml:cn>-7.323854935102775e-016</mml:cn>
+							<mml:cn>3.533186548345671e-010</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.001718713849563955</mml:cn>
+							<mml:cn>-5.034104458017701e-007</mml:cn>
+							<mml:cn>-4.909352281587846e-007</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-5.034104458017701e-007</mml:cn>
+							<mml:cn>3.535813615110892e-010</mml:cn>
+							<mml:cn>-7.323854935102777e-016</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-4.909352281587845e-007</mml:cn>
+							<mml:cn>-7.323854935102775e-016</mml:cn>
+							<mml:cn>3.533186548345671e-010</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaXa>
+				<SigmaLa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.0009597239448520608</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0003198286615319216</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003197091515216963</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003197104764663771</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0009597239448520608</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0003198286615319216</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003197091515216963</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003197104764663771</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.0003198286615319217</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0009592483779153356</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003199469344973467</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003199482604274523</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0003198286615319217</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0009592483779153356</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003199469344973467</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003199482604274523</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0003197091515216962</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003199469344973468</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0009594875310160153</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0003198287057268455</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003197091515216962</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003199469344973468</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0009594875310160153</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0003198287057268455</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0003197104764663773</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003199482604274523</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0003198287057268453</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0009594848801412286</mml:cn>
+							<mml:cn>0</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003197104764663773</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0003199482604274523</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>-0.0003198287057268453</mml:cn>
+							<mml:cn>0</mml:cn>
+							<mml:cn>0.0009594848801412286</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaLa>
+			</quality>
+			<fiducialMarks uom="#px">
+				<fiducialMark key="1">
+					<gml:pos>2769 1382</gml:pos>
+				</fiducialMark>
+				<fiducialMark key="2">
+					<gml:pos>79 1397</gml:pos>
+				</fiducialMark>
+				<fiducialMark key="3">
+					<gml:pos>1416 44</gml:pos>
+				</fiducialMark>
+				<fiducialMark key="4">
+					<gml:pos>1431 2735</gml:pos>
+				</fiducialMark>
+			</fiducialMarks>
+		</imageIO>
+	</interiorOrientation>
+	<exteriorOrientation>
+		<imageEO type="spatialResection" image_key="1">
+			<Xa>
+				<X0 uom="#m">680563.040829192</X0>
+				<Y0 uom="#m">7465043.615670555</Y0>
+				<Z0 uom="#m">1318.222888934673</Z0>
+				<phi uom="#rad">-0.01183854852964648</phi>
+				<omega uom="#rad">0.03213721719438253</omega>
+				<kappa uom="#rad">-0.01868266445317065</kappa>
+			</Xa>
+		</imageEO>
+		<imageEO type="spatialResection" image_key="2">
+			<Xa>
+				<X0 uom="#m">681276.7801411147</X0>
+				<Y0 uom="#m">7465033.786330241</Y0>
+				<Z0 uom="#m">1318.66739654617</Z0>
+				<phi uom="#rad">-0.01335688297085822</phi>
+				<omega uom="#rad">0.01199362080053563</omega>
+				<kappa uom="#rad">-0.03228557493268124</kappa>
+			</Xa>
+		</imageEO>
+		<imageEO type="spatialResection" image_key="3">
+			<Xa>
+				<X0 uom="#m">682001.474240886</X0>
+				<Y0 uom="#m">7465012.373389905</Y0>
+				<Z0 uom="#m">1319.5727958011</Z0>
+				<phi uom="#rad">-0.01461134532031439</phi>
+				<omega uom="#rad">0.02783570875179874</omega>
+				<kappa uom="#rad">-0.05148575864723386</kappa>
+			</Xa>
+		</imageEO>
+	</exteriorOrientation>
+	<spatialResections>
+		<imageSR image_key="1">
+			<iterations>3</iterations>
+			<converged>true</converged>
+			<parameters>
+				<Lb>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>63.94855389566953</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-91.74634068569824</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-54.08285580020703</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-99.4449286060336</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>90.00719394326742</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>26.31630431043848</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-24.94621169257936</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>83.3488015759452</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</Lb>
+				<L0>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>67.96485152252521</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-96.75506992983838</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-55.26512998437748</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-105.6017374778314</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>96.18887309800206</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>28.427115068898</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-28.73074320763315</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>88.4616774286623</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</L0>
+				<X0>
+					<X00 uom="#m">680582.6377965872</X00>
+					<Y00 uom="#m">7465096.441629226</Y00>
+					<Z00 uom="#m">1239.084</Z00>
+					<phi0 uom="#rad">0</phi0>
+					<omega0 uom="#rad">0</omega0>
+					<kappa0 uom="#rad">-0.03286265981387305</kappa0>
+				</X0>
+			</parameters>
+			<quality>
+				<V>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.01973117609704644</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.01371632861744843</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.006168193229314056</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01435367088980399</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.01992698914659741</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.01639431226847776</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.006798574737121754</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01546218269891142</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</V>
+				<sigma0Squared>0.0008863447700585855</sigma0Squared>
+				<SigmaXa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.5190714253832819</mml:cn>
+							<mml:cn>-0.01253405261371054</mml:cn>
+							<mml:cn>0.03524122570741693</mml:cn>
+							<mml:cn>0.0003304769422418358</mml:cn>
+							<mml:cn>1.230894840169507e-05</mml:cn>
+							<mml:cn>-2.89205750477066e-05</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.01253405261371053</mml:cn>
+							<mml:cn>0.6833941457238102</mml:cn>
+							<mml:cn>-0.05562706858990697</mml:cn>
+							<mml:cn>-1.851448415271642e-05</mml:cn>
+							<mml:cn>-0.0004046472711726301</mml:cn>
+							<mml:cn>-3.52200788801352e-05</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.03524122570741693</mml:cn>
+							<mml:cn>-0.05562706858990697</mml:cn>
+							<mml:cn>0.04762624966323489</mml:cn>
+							<mml:cn>2.71678219934315e-05</mml:cn>
+							<mml:cn>3.72710684346004e-05</mml:cn>
+							<mml:cn>6.799596117928198e-07</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0003304769422418358</mml:cn>
+							<mml:cn>-1.851448415271642e-05</mml:cn>
+							<mml:cn>2.716782199343149e-05</mml:cn>
+							<mml:cn>2.178185471164216e-07</mml:cn>
+							<mml:cn>1.430789476556706e-08</mml:cn>
+							<mml:cn>-1.574538700936588e-08</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>1.230894840169507e-05</mml:cn>
+							<mml:cn>-0.0004046472711726301</mml:cn>
+							<mml:cn>3.72710684346004e-05</mml:cn>
+							<mml:cn>1.430789476556707e-08</mml:cn>
+							<mml:cn>2.457435165894205e-07</mml:cn>
+							<mml:cn>1.903227270696043e-08</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-2.89205750477066e-05</mml:cn>
+							<mml:cn>-3.52200788801352e-05</mml:cn>
+							<mml:cn>6.799596117928198e-07</mml:cn>
+							<mml:cn>-1.574538700936588e-08</mml:cn>
+							<mml:cn>1.903227270696043e-08</mml:cn>
+							<mml:cn>2.581245450490581e-08</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaXa>
+				<SigmaLa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.0005535609523662842</mml:cn>
+							<mml:cn>-3.778910026877441e-05</mml:cn>
+							<mml:cn>8.649917070066354e-05</mml:cn>
+							<mml:cn>-0.0001807756399833556</mml:cn>
+							<mml:cn>8.555826283111081e-05</mml:cn>
+							<mml:cn>0.0003161428646736316</mml:cn>
+							<mml:cn>0.0001661255349132509</mml:cn>
+							<mml:cn>-8.810194003809976e-05</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-3.778910026877423e-05</mml:cn>
+							<mml:cn>0.0005753277320851046</mml:cn>
+							<mml:cn>0.0002269786905728389</mml:cn>
+							<mml:cn>4.935331742251e-05</mml:cn>
+							<mml:cn>-0.0002758175976052644</mml:cn>
+							<mml:cn>8.107804913342019e-05</mml:cn>
+							<mml:cn>7.751896925790629e-05</mml:cn>
+							<mml:cn>0.0001868032314720262</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>8.649917070066652e-05</mml:cn>
+							<mml:cn>0.0002269786905728382</mml:cn>
+							<mml:cn>0.0007101186950527541</mml:cn>
+							<mml:cn>-2.486319712368516e-06</mml:cn>
+							<mml:cn>0.0001799133943630589</mml:cn>
+							<mml:cn>-0.0001141593768225304</mml:cn>
+							<mml:cn>-8.470677593882311e-05</mml:cn>
+							<mml:cn>-0.0001164361861619407</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.0001807756399833556</mml:cn>
+							<mml:cn>4.935331742251149e-05</mml:cn>
+							<mml:cn>-2.486319712368012e-06</mml:cn>
+							<mml:cn>0.0007722223860437964</mml:cn>
+							<mml:cn>0.0001115300311650253</mml:cn>
+							<mml:cn>0.0001614428830319273</mml:cn>
+							<mml:cn>7.687985755909732e-05</mml:cn>
+							<mml:cn>-9.269752486210279e-05</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>8.555826283111212e-05</mml:cn>
+							<mml:cn>-0.0002758175976052648</mml:cn>
+							<mml:cn>0.0001799133943630574</mml:cn>
+							<mml:cn>0.0001115300311650246</mml:cn>
+							<mml:cn>0.0005985432408950459</mml:cn>
+							<mml:cn>-3.922284424016639e-05</mml:cn>
+							<mml:cn>1.189135900182242e-05</mml:cn>
+							<mml:cn>0.0002058603489275452</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0003161428646736315</mml:cn>
+							<mml:cn>8.107804913342099e-05</mml:cn>
+							<mml:cn>-0.0001141593768225301</mml:cn>
+							<mml:cn>0.000161442883031927</mml:cn>
+							<mml:cn>-3.922284424016585e-05</mml:cn>
+							<mml:cn>0.0005793562270309345</mml:cn>
+							<mml:cn>-0.0001664578049209445</mml:cn>
+							<mml:cn>5.470797900979897e-05</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0001661255349132513</mml:cn>
+							<mml:cn>7.751896925790583e-05</mml:cn>
+							<mml:cn>-8.470677593882549e-05</mml:cn>
+							<mml:cn>7.687985755909723e-05</mml:cn>
+							<mml:cn>1.189135900182138e-05</mml:cn>
+							<mml:cn>-0.0001664578049209445</mml:cn>
+							<mml:cn>0.000792198545668681</mml:cn>
+							<mml:cn>6.345271514311528e-06</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-8.810194003810003e-05</mml:cn>
+							<mml:cn>0.0001868032314720277</mml:cn>
+							<mml:cn>-0.0001164361861619407</mml:cn>
+							<mml:cn>-9.269752486210226e-05</mml:cn>
+							<mml:cn>0.0002058603489275449</mml:cn>
+							<mml:cn>5.470797900979968e-05</mml:cn>
+							<mml:cn>6.345271514311393e-06</mml:cn>
+							<mml:cn>0.0007367408412089191</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaLa>
+			</quality>
+		</imageSR>
+		<imageSR image_key="2">
+			<iterations>4</iterations>
+			<converged>true</converged>
+			<parameters>
+				<Lb>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>-111.4441065761921</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>86.06600983097118</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-20.08735452624182</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-88.8269026492373</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>82.93278294800251</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>95.0394150305591</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-78.49436669184395</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-23.06028426751883</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>67.46533189767163</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>4.169586142548148</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</Lb>
+				<L0>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>-119.8709800736186</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>95.92018694962223</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-24.45559890055715</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-95.83932525385342</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>93.38316806929323</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>102.9045352712738</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-85.93885251144013</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-23.44103982181144</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>73.44694196712251</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>2.655140901283901</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</L0>
+				<X0>
+					<X00 uom="#m">681299.2137308344</X00>
+					<Y00 uom="#m">7465051.967553546</Y00>
+					<Z00 uom="#m">1210.86</Z00>
+					<phi0 uom="#rad">0</phi0>
+					<omega0 uom="#rad">0</omega0>
+					<kappa0 uom="#rad">-0.01082512635262023</kappa0>
+				</X0>
+			</parameters>
+			<quality>
+				<V>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.003460906415384102</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.02478888772941445</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.04273773037250095</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01679135566531897</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.03351300370174215</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.01586130187681078</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.06289302544773534</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01130891227501607</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.01660799647889633</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01253353860012396</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</V>
+				<sigma0Squared>0.002156492912146755</sigma0Squared>
+				<SigmaXa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.6879557404500151</mml:cn>
+							<mml:cn>0.1446553952619776</mml:cn>
+							<mml:cn>-0.007445953737738655</mml:cn>
+							<mml:cn>0.000397174015079567</mml:cn>
+							<mml:cn>-8.323482996750379e-05</mml:cn>
+							<mml:cn>2.995612331845212e-05</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.1446553952619777</mml:cn>
+							<mml:cn>0.8435401753958242</mml:cn>
+							<mml:cn>0.1668632707460129</mml:cn>
+							<mml:cn>7.239780649369394e-05</mml:cn>
+							<mml:cn>-0.0005219332156093874</mml:cn>
+							<mml:cn>2.675123406042766e-05</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.007445953737738643</mml:cn>
+							<mml:cn>0.166863270746013</mml:cn>
+							<mml:cn>0.1088767657631328</mml:cn>
+							<mml:cn>-1.10982465425274e-05</mml:cn>
+							<mml:cn>-0.000112544826698235</mml:cn>
+							<mml:cn>3.582494452379802e-06</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0003971740150795669</mml:cn>
+							<mml:cn>7.239780649369392e-05</mml:cn>
+							<mml:cn>-1.10982465425274e-05</mml:cn>
+							<mml:cn>2.408252427615634e-07</mml:cn>
+							<mml:cn>-4.058340684094279e-08</mml:cn>
+							<mml:cn>1.471426553281715e-08</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-8.323482996750385e-05</mml:cn>
+							<mml:cn>-0.0005219332156093875</mml:cn>
+							<mml:cn>-0.000112544826698235</mml:cn>
+							<mml:cn>-4.05834068409428e-08</mml:cn>
+							<mml:cn>3.359795218310539e-07</mml:cn>
+							<mml:cn>-1.423144557366799e-08</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>2.99561233184521e-05</mml:cn>
+							<mml:cn>2.675123406042766e-05</mml:cn>
+							<mml:cn>3.582494452379802e-06</mml:cn>
+							<mml:cn>1.471426553281714e-08</mml:cn>
+							<mml:cn>-1.423144557366798e-08</mml:cn>
+							<mml:cn>4.165544276610344e-08</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaXa>
+				<SigmaLa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.001673793843443892</mml:cn>
+							<mml:cn>-0.0003630782464032362</mml:cn>
+							<mml:cn>-0.0001868181629749126</mml:cn>
+							<mml:cn>-6.684082794095866e-05</mml:cn>
+							<mml:cn>9.432060502612809e-05</mml:cn>
+							<mml:cn>-0.0002933032355958123</mml:cn>
+							<mml:cn>0.0002619572236355532</mml:cn>
+							<mml:cn>0.0005952257206003887</mml:cn>
+							<mml:cn>0.0003210685422810567</mml:cn>
+							<mml:cn>0.000125780663289342</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.0003630782464032366</mml:cn>
+							<mml:cn>0.001687981147325645</mml:cn>
+							<mml:cn>0.000113630512947384</mml:cn>
+							<mml:cn>0.0001220991996337392</mml:cn>
+							<mml:cn>0.0002927324797244689</mml:cn>
+							<mml:cn>-0.0003666031962914591</mml:cn>
+							<mml:cn>-0.0002529558170437623</mml:cn>
+							<mml:cn>0.0005080447352116349</mml:cn>
+							<mml:cn>0.000218622276261835</mml:cn>
+							<mml:cn>0.0002030051699735139</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.0001868181629749149</mml:cn>
+							<mml:cn>0.0001136305129473852</mml:cn>
+							<mml:cn>0.001337701772086525</mml:cn>
+							<mml:cn>2.176519533473413e-05</mml:cn>
+							<mml:cn>-0.0001501667216638558</mml:cn>
+							<mml:cn>-0.0001674536122717951</mml:cn>
+							<mml:cn>0.0007193395542741244</mml:cn>
+							<mml:cn>-0.0003572841928784132</mml:cn>
+							<mml:cn>0.0004427481432631039</mml:cn>
+							<mml:cn>0.0003940731557264527</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-6.684082794095903e-05</mml:cn>
+							<mml:cn>0.0001220991996337396</mml:cn>
+							<mml:cn>2.176519533473417e-05</mml:cn>
+							<mml:cn>0.001516835412428861</mml:cn>
+							<mml:cn>8.354101751586809e-05</mml:cn>
+							<mml:cn>0.0001823552004485957</mml:cn>
+							<mml:cn>0.0005974895905563916</mml:cn>
+							<mml:cn>0.0003659862927906731</mml:cn>
+							<mml:cn>-0.0006468680957319494</mml:cn>
+							<mml:cn>-2.819364273735937e-05</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>9.432060502612618e-05</mml:cn>
+							<mml:cn>0.0002927324797244697</mml:cn>
+							<mml:cn>-0.000150166721663855</mml:cn>
+							<mml:cn>8.354101751586749e-05</mml:cn>
+							<mml:cn>0.001493450336541038</mml:cn>
+							<mml:cn>0.0003547284540219247</mml:cn>
+							<mml:cn>0.0002462011602609407</mml:cn>
+							<mml:cn>-6.459922969976326e-05</mml:cn>
+							<mml:cn>0.000470936094197534</mml:cn>
+							<mml:cn>-0.0006735741814054035</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.0002933032355958127</mml:cn>
+							<mml:cn>-0.0003666031962914567</mml:cn>
+							<mml:cn>-0.0001674536122717941</mml:cn>
+							<mml:cn>0.0001823552004485979</mml:cn>
+							<mml:cn>0.0003547284540219263</mml:cn>
+							<mml:cn>0.001712187858071748</mml:cn>
+							<mml:cn>-0.0001176310931305762</mml:cn>
+							<mml:cn>0.0001091419209153881</mml:cn>
+							<mml:cn>0.000233977182942984</mml:cn>
+							<mml:cn>0.0005221956192162341</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0002619572236355501</mml:cn>
+							<mml:cn>-0.000252955817043762</mml:cn>
+							<mml:cn>0.0007193395542741241</mml:cn>
+							<mml:cn>0.0005974895905563916</mml:cn>
+							<mml:cn>0.0002462011602609396</mml:cn>
+							<mml:cn>-0.0001176310931305766</mml:cn>
+							<mml:cn>0.000860909513660206</mml:cn>
+							<mml:cn>-0.0001465603251437736</mml:cn>
+							<mml:cn>7.31254552405371e-05</mml:cn>
+							<mml:cn>-8.396004671458998e-05</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0005952257206003876</mml:cn>
+							<mml:cn>0.0005080447352116364</mml:cn>
+							<mml:cn>-0.0003572841928784131</mml:cn>
+							<mml:cn>0.0003659862927906743</mml:cn>
+							<mml:cn>-6.459922969976214e-05</mml:cn>
+							<mml:cn>0.0001091419209153872</mml:cn>
+							<mml:cn>-0.0001465603251437734</mml:cn>
+							<mml:cn>0.0007804710311965241</mml:cn>
+							<mml:cn>-2.842791053005434e-05</mml:cn>
+							<mml:cn>0.0004019590147763857</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0003210685422810551</mml:cn>
+							<mml:cn>0.0002186222762618361</mml:cn>
+							<mml:cn>0.000442748143263105</mml:cn>
+							<mml:cn>-0.0006468680957319487</mml:cn>
+							<mml:cn>0.0004709360941975342</mml:cn>
+							<mml:cn>0.0002339771829429844</mml:cn>
+							<mml:cn>7.312545524053838e-05</mml:cn>
+							<mml:cn>-2.842791053005361e-05</mml:cn>
+							<mml:cn>0.0008308146600391231</mml:cn>
+							<mml:cn>0.0002310116034524378</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.0001257806632893409</mml:cn>
+							<mml:cn>0.0002030051699735138</mml:cn>
+							<mml:cn>0.0003940731557264527</mml:cn>
+							<mml:cn>-2.819364273735906e-05</mml:cn>
+							<mml:cn>-0.0006735741814054034</mml:cn>
+							<mml:cn>0.000522195619216232</mml:cn>
+							<mml:cn>-8.396004671459013e-05</mml:cn>
+							<mml:cn>0.0004019590147763845</mml:cn>
+							<mml:cn>0.0002310116034524371</mml:cn>
+							<mml:cn>0.001044811898086984</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaLa>
+			</quality>
+		</imageSR>
+		<imageSR image_key="3">
+			<iterations>3</iterations>
+			<converged>true</converged>
+			<parameters>
+				<Lb>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>-78.7292951722341</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>25.274089168149</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-106.1163249505362</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-95.08421521362652</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-3.498631447648228</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>92.03804832875679</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>19.2439566054033</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-108.968899455393</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</Lb>
+				<L0>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>-83.45294802980833</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>25.7205879091063</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-109.9110281506249</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-99.98999384240688</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-3.530118327938167</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>98.67989576775472</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>20.40786012410076</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-115.2304726079165</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</L0>
+				<X0>
+					<X00 uom="#m">682018.8399674246</X00>
+					<Y00 uom="#m">7465058.280073783</Y00>
+					<Z00 uom="#m">1239.084</Z00>
+					<phi0 uom="#rad">0</phi0>
+					<omega0 uom="#rad">0</omega0>
+					<kappa0 uom="#rad">-0.05183375501352028</kappa0>
+				</X0>
+			</parameters>
+			<quality>
+				<V>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>-0.01261301137665782</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.00657085252755607</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.004539033495973399</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01100072473839475</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.005583334877126145</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.004864093317323182</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>0.01154563883944704</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>8.246269646861037e-005</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</V>
+				<sigma0Squared>0.0002660122686155532</sigma0Squared>
+				<SigmaXa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.1412863652874991</mml:cn>
+							<mml:cn>-0.07082531534059014</mml:cn>
+							<mml:cn>-0.01879106359783282</mml:cn>
+							<mml:cn>9.214432644543384e-005</mml:cn>
+							<mml:cn>4.231872693541958e-005</mml:cn>
+							<mml:cn>-1.230353561596863e-005</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.07082531534059017</mml:cn>
+							<mml:cn>0.2713520024510395</mml:cn>
+							<mml:cn>-0.01554784774856323</mml:cn>
+							<mml:cn>-4.659724857977022e-005</mml:cn>
+							<mml:cn>-0.0001529421007675565</mml:cn>
+							<mml:cn>3.244392892880004e-005</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-0.0187910635978328</mml:cn>
+							<mml:cn>-0.01554784774856324</mml:cn>
+							<mml:cn>0.01887132694154516</mml:cn>
+							<mml:cn>-1.515831972573701e-005</mml:cn>
+							<mml:cn>9.452754848897178e-006</mml:cn>
+							<mml:cn>-1.10821758471261e-006</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>9.214432644543384e-005</mml:cn>
+							<mml:cn>-4.65972485797702e-005</mml:cn>
+							<mml:cn>-1.515831972573702e-005</mml:cn>
+							<mml:cn>6.268172942924292e-008</mml:cn>
+							<mml:cn>2.791513554013707e-008</mml:cn>
+							<mml:cn>-7.400105108530065e-009</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>4.23187269354196e-005</mml:cn>
+							<mml:cn>-0.0001529421007675564</mml:cn>
+							<mml:cn>9.452754848897175e-006</mml:cn>
+							<mml:cn>2.791513554013709e-008</mml:cn>
+							<mml:cn>8.811945992881085e-008</mml:cn>
+							<mml:cn>-1.726211643754742e-008</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-1.230353561596864e-005</mml:cn>
+							<mml:cn>3.244392892880007e-005</mml:cn>
+							<mml:cn>-1.10821758471261e-006</mml:cn>
+							<mml:cn>-7.400105108530072e-009</mml:cn>
+							<mml:cn>-1.726211643754744e-008</mml:cn>
+							<mml:cn>1.035178792971058e-008</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaXa>
+				<SigmaLa>
+					<mml:matrix>
+						<mml:matrixrow>
+							<mml:cn>0.0001277782477497889</mml:cn>
+							<mml:cn>3.800107250172957e-005</mml:cn>
+							<mml:cn>2.714365521625652e-005</mml:cn>
+							<mml:cn>5.63649028121431e-005</mml:cn>
+							<mml:cn>4.428095855414801e-005</mml:cn>
+							<mml:cn>-7.502838867355801e-005</mml:cn>
+							<mml:cn>6.531255233674694e-005</mml:cn>
+							<mml:cn>-2.120488803712816e-005</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>3.800107250172927e-005</mml:cn>
+							<mml:cn>0.0001368993050568382</mml:cn>
+							<mml:cn>-9.039770388394547e-005</mml:cn>
+							<mml:cn>5.375324275966487e-005</mml:cn>
+							<mml:cn>6.067481103176427e-006</mml:cn>
+							<mml:cn>4.405279821576155e-005</mml:cn>
+							<mml:cn>4.808386082482409e-005</mml:cn>
+							<mml:cn>2.967686758519498e-005</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>2.714365521625575e-005</mml:cn>
+							<mml:cn>-9.039770388394535e-005</mml:cn>
+							<mml:cn>0.0002027185593308433</mml:cn>
+							<mml:cn>3.732967857597961e-005</mml:cn>
+							<mml:cn>4.053248916011975e-006</mml:cn>
+							<mml:cn>3.110584096220488e-005</mml:cn>
+							<mml:cn>3.332950283254136e-005</mml:cn>
+							<mml:cn>2.083083878583804e-005</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>5.636490281214286e-005</mml:cn>
+							<mml:cn>5.375324275966458e-005</mml:cn>
+							<mml:cn>3.732967857597969e-005</mml:cn>
+							<mml:cn>0.0002026194560417007</mml:cn>
+							<mml:cn>-2.869986062271607e-005</mml:cn>
+							<mml:cn>1.692178434647198e-005</mml:cn>
+							<mml:cn>-6.516821910317085e-005</mml:cn>
+							<mml:cn>-5.270043222677765e-006</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>4.428095855414784e-005</mml:cn>
+							<mml:cn>6.067481103176559e-006</mml:cn>
+							<mml:cn>4.053248916012418e-006</mml:cn>
+							<mml:cn>-2.869986062271607e-005</mml:cn>
+							<mml:cn>0.000249023813350406</mml:cn>
+							<mml:cn>2.043303828255574e-005</mml:cn>
+							<mml:cn>-3.107272931687506e-005</mml:cn>
+							<mml:cn>3.126964734974107e-006</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-7.502838867355864e-005</mml:cn>
+							<mml:cn>4.405279821576145e-005</mml:cn>
+							<mml:cn>3.110584096220414e-005</mml:cn>
+							<mml:cn>1.692178434647204e-005</mml:cn>
+							<mml:cn>2.043303828255523e-005</mml:cn>
+							<mml:cn>0.0002206645766257643</mml:cn>
+							<mml:cn>2.241189177173197e-005</mml:cn>
+							<mml:cn>-1.621724522273416e-005</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>6.531255233674713e-005</mml:cn>
+							<mml:cn>4.808386082482407e-005</mml:cn>
+							<mml:cn>3.332950283254198e-005</mml:cn>
+							<mml:cn>-6.516821910317096e-005</mml:cn>
+							<mml:cn>-3.107272931687493e-005</mml:cn>
+							<mml:cn>2.241189177173209e-005</mml:cn>
+							<mml:cn>0.0001984026640968704</mml:cn>
+							<mml:cn>-3.252468347316424e-006</mml:cn>
+						</mml:matrixrow>
+						<mml:matrixrow>
+							<mml:cn>-2.120488803712837e-005</mml:cn>
+							<mml:cn>2.967686758519451e-005</mml:cn>
+							<mml:cn>2.083083878583775e-005</mml:cn>
+							<mml:cn>-5.270043222677918e-006</mml:cn>
+							<mml:cn>3.12696473497377e-006</mml:cn>
+							<mml:cn>-1.621724522273443e-005</mml:cn>
+							<mml:cn>-3.252468347316373e-006</mml:cn>
+							<mml:cn>0.0002579669894411061</mml:cn>
+						</mml:matrixrow>
+					</mml:matrix>
+				</SigmaLa>
+			</quality>
+		</imageSR>
+	</spatialResections>
+	<features>
+		<featuresFilename>F:/e-foto/data/project_example_data/MinhaRestitui��o.spf</featuresFilename>
+	</features>
+</efotoPhotogrammetricProject>

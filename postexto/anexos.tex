@@ -1,0 +1,30 @@
+% ----------------------------------------------------------
+% Anexos (opcionais)
+% ----------------------------------------------------------
+% ---
+% Inicia os anexos
+% ---
+\annex
+%=====================================================================
+\postextualchapter{\textit{Scripts} em Python para o carregamento e visualização de imagens}
+%=====================================================================
+
+Códigos complementares para operacionalização imediata no Banco de Dados que foram cedidos pelo Prof. Irving Badolato ao longo da execução deste trabalho.
+
+\section{Carregamento de imagens}\label{script1}
+\lstinputlisting[language=python,showstringspaces=false]{codigos/storeimgs.py}
+
+\section{Exemplo de para a visualização de imagens carregadas no SGBD}\label{script3}
+\lstinputlisting[language=python,showstringspaces=false]{codigos/rastertest.py}
+
+O exemplo apresentado nesta seção depende de um módulo de nome dbconn, cujo código implementa uma interface gráfica com o usuário. A implementação de dbconn, no arquivo \textit{dbconn.py}, contém:
+
+\lstinputlisting[language=python,showstringspaces=false]{codigos/dbconn.py}
+
+
+%=====================================================================
+\postextualchapter{Consulta dos parâmetros de orientação das imagens}
+%=====================================================================
+
+\section{Exemplo de função e visão como alternativa de recuperar os parâmetros de Orientação Interior}\label{script2}
+\lstinputlisting[]{codigos/ios.sql}
